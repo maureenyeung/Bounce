@@ -1,3 +1,8 @@
+var Balx = 50;
+var Baly = 50;
+var speedX = 
+var speedY =
+
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
@@ -18,9 +23,21 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
+   // Kleur de achtergrond blauw, zodat je het kunt zien
+   background('blue'); 
+  Bal.show()
+  Bal.update();
   // stel vulkleur in
   fill(100, 100, 255);
 
   // teken een cirkel
-  ellipse(50,50,80,80);
+  ellipse(x,y,80,80);
+
+  // position updaten
+x = x + speedX;
+y = y + speedY;
+}
+
+if (y===720) {
+
 }
